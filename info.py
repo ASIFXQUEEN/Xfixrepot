@@ -3,14 +3,14 @@ import time
 
 class Config(object):
     # Pyrogram Client
-    API_ID    = int(os.environ.get("API_ID", "22981583"))  # ⚠️ Required
-    API_HASH  = os.environ.get("API_HASH", "c02ca0834d5d92ffb31fea2b50060195") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6551526934:AAFPLbuyLIYBuQVTUhuzOJZXKZoNx6FtWIM") # ⚠️ Required
+    API_ID    = int(os.environ.get("API_ID", ""))  # ⚠️ Required
+    API_HASH  = os.environ.get("API_HASH", "") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", ") # ⚠️ Required
     
     # Other Configs
     BOT_START_TIME = time.time()
-    OWNER    = int(os.environ.get("OWNER", "6258877205"))  # ⚠️ Required
-    SUDO = list(map(int, os.environ.get("SUDO", "6848318915").split()))  # ⚠️ Required
+    OWNER    = int(os.environ.get("OWNER", ""))  # ⚠️ Required
+    SUDO = list(map(int, os.environ.get("SUDO", "").split()))  # ⚠️ Required
     # Web Response Config
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
     PORT = int(os.environ.get("PORT", "8080"))
@@ -26,7 +26,7 @@ class Txt(object):
     SEND_TARGET_CHANNEL = """
 ( SEND THE TARGET CHANNEL LINK or USERNAME)
 
-☛ For e.g :- <code> @ </code> or <code> https:/t.me/BRANDEDKING82 </code>
+☛ For e.g :- <code> @ </code> or <code> https:/t.me/its_deva_heree </code>
 """
 
     SEND_SESSION_MSG = """
@@ -94,9 +94,9 @@ The bot will keep reporting to target channel or group until it's reach the numb
     START_MSG = """
 Hɪ {},
 
-Tʜɪs Bᴏᴛ ɪs ғᴏʀ ᴛᴏ ʀᴇᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ ᴏʀ ɢʀᴏᴜᴘ ɪɴ ᴍᴀss ʟᴇᴠᴇʟ ᴛʜʀᴏᴜɢʜ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴄᴄᴏᴜɴᴛ sᴇssɪᴏɴ sᴛʀɪɴɢ ᴡʜɪᴄʜ ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ʙʏ @
+Tʜɪs Bᴏᴛ ɪs ғᴏʀ ᴛᴏ ʀᴇᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ ᴏʀ ɢʀᴏᴜᴘ ɪɴ ᴍᴀss ʟᴇᴠᴇʟ ᴛʜʀᴏᴜɢʜ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴄᴄᴏᴜɴᴛ sᴇssɪᴏɴ sᴛʀɪɴɢ ᴡʜɪᴄʜ ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ʙʏ @its_deva_heree
 
-Tʜɪs ʙᴏᴛ ɪs sᴏʟᴇʟʏ ᴄʀᴇᴀᴛᴇ ᴏʀ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ :- @BRANDEDKING82
+Tʜɪs ʙᴏᴛ ɪs sᴏʟᴇʟʏ ᴄʀᴇᴀᴛᴇ ᴏʀ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ :- @its_deva_heree
 """
 
     HELP_MSG = """
