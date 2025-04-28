@@ -1,7 +1,3 @@
-Pyrogram==2.0.103
-TgCrypto
-ujson
-Pyromod
-aiohttp
-pytz
-psutil
+telethon==1.28.5
+pyrogram==2.0.106
+python-dotenv==1.0.0
