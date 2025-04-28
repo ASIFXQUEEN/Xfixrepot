@@ -3,6 +3,9 @@ from config import Config
 import os
 import json
 import asyncio
+import os
+PORT = int(os.environ.get('PORT', 5000))
+client.start(port=PORT)
 
 # Initialize
 client = TelegramClient('massreport', Config.API_ID, Config.API_HASH).start(bot_token=Config.BOT_TOKEN)
@@ -85,6 +88,12 @@ async def list_accounts(event):
     for num, session in accounts.items():
         msg += f"{num}. {session[:15]}...\n"
     await event.reply(msg)
+
+
+@client.on(events.NewMessage(pattern='/ping'))
+async def ping(event):
+    await event.reply("🏓 Pong! Bot is alive")
+
 
 @client.on(events.NewMessage(pattern='/report'))
 async def report_tool(event):
