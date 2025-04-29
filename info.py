@@ -1,22 +1,35 @@
 class Config:
-    OWNER = [123456789]  # Replace with your Telegram user ID(s)
-    API_ID = 123456       # Replace with your API_ID
-    API_HASH = "your_api_hash"  # Replace with your API_HASH
-    BOT_TOKEN = "your_bot_token"  # Replace with your BOT_TOKEN
+    OWNER = 5099049612
+    SUDO = [5099049612]
 
 
 class Txt:
-    REPORT_CHOICE = (
-        "**Choose Report Type**\n\n"
-        "1️⃣ Report for Child Abuse\n"
-        "2️⃣ Report for Copyrighted Content\n"
-        "3️⃣ Report for Impersonation\n"
-        "4️⃣ Report an Irrelevant GeoGroup\n"
-        "5️⃣ Report an Illegal Drug\n"
-        "6️⃣ Report for Violence\n"
-        "7️⃣ Report for Offensive Personal Details\n"
-        "8️⃣ Reason for Pornography\n"
-        "9️⃣ Report for Spam"
-    )
+    START_TXT = """Hey {},
 
-    SEND_NO_OF_REPORT_MSG = "**Enter How Many Times You Want To Report @{0}**"
+I am a Branded Mass Report Bot.
+
+Use /help to see available commands."""
+    
+    HELP_TXT = """
+<b>Available Commands:</b>
+
+/start - Start the bot
+/help - Show help message
+/report - Start reporting
+/make_config - Make target config
+"""
+
+    REPORT_CHOICE = """<b>Choose Report Reason:</b>
+
+1. Child Abuse
+2. Copyrighted Content
+3. Impersonation
+4. Irrelevant Geogroup
+5. Illegal Drug
+6. Violence
+7. Offensive Personal Detail
+8. Pornography
+9. Spam
+"""
+
+    SEND_NO_OF_REPORT_MSG = "How many times should I report the target <b>@{}</b>?"
